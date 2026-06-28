@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mambo</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mambo</h1>
+    
+    <div class="search-section">
+      <div class="search-wrapper">
+        <input 
+          type="text" 
+          id="stock-input" 
+          class="stock-input" 
+          placeholder="종목명 또는 코드 입력 (예: 삼성전자, 005930)"
+          autocomplete="off"
+        >
+        <div id="stock-suggestions" class="stock-suggestions" role="listbox"></div>
+      </div>
+      <button id="analyze-btn" class="analyze-btn">분석하기</button>
+    </div>
+
+    <div id="results-container" class="results-container">
+      <!-- 결과 카드가 여기에 추가됩니다 -->
+    </div>
+
+    <div id="empty-state" class="empty-state">
+      <p>종목을 입력하고 분석하기를 클릭하세요</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
